@@ -1,0 +1,44 @@
+/* Contêiner que expande para a esquerda */
+.search-container {
+  position: absolute;
+  right: 10px; /* Posiciona o contêiner no lado direito da página */
+  width: 40px; /* Largura inicial para mostrar apenas a lupa */
+  transition: width 0.3s ease; /* Animação para expandir */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Garante que a lupa fique à direita */
+}
+
+/* Input escondido inicialmente */
+.search-container input[type="text"] {
+  position: absolute;
+  right: 0;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+/* Imagem da lupa à direita */
+.search-container img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1; /* Fica acima do input */
+}
+
+/* Expande o contêiner para a esquerda */
+.search-container.active {
+  width: 300px; /* Largura total ao expandir */
+  right: 10px; /* Ponto fixo para expandir para a esquerda */
+}
+
+/* Input visível quando expandido */
+.search-container.active input[type="text"] {
+  opacity: 1;
+  visibility: visible;
+}

@@ -1,0 +1,38 @@
+/* Contêiner que expande para a direita */
+
+.search-container {
+    position: relative;
+    width: 40px; /* Largura inicial para mostrar apenas a lupa */
+    transition: width 0.3s ease; /* Animação para expandir */
+ }
+
+  .search-container input[type="text"] {
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+  }
+
+  .search-container img {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  /* Expande o campo de pesquisa quando a classe 'active' é adicionada */
+  .search-container.active {
+    width: 300px; /* Define a largura do campo de pesquisa expandido */
+  }
+
+  .search-container.active input[type="text"] {
+    opacity: 1;
+    visibility: visible;
+  }

@@ -1,0 +1,44 @@
+#azul{
+    position: absolute;
+    width: 50%;
+    height: 450px;
+    background-color: #004d6e; 
+    margin-top: 200px;
+    margin-left: 80px;
+     text-align: center;
+     padding-top: 20px;
+}
+#branco{
+    position: absolute;
+    width: 96%;
+    height: 450px;
+    background-color: #ffffff; 
+    margin-top: -10px;
+    margin-left: 11px;
+}
+
+#bttm{
+    background-color: #004d6e;
+    width: 18%;
+    height: 55px;
+    margin-top: 480px;
+    margin-left: 900px;
+}
+#escrito{
+    position: relative;
+        top:3px;
+        font-size: 20px;
+        color: rgb(255, 255, 254);
+        padding-left: 60px;
+        text-decoration: 0.5s;
+        padding:.5cm;
+        text-align: center;
+        text-decoration: none;
+}
+#imgprodt{
+    width: 135%;
+    height: 440px;
+    float: left;
+    margin-top: 9px;
+    margin-left: -90px;
+}

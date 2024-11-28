@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campo de Pesquisa com Lupa</title>
+  <!--<link rel="stylesheet" href="css/esquerda.css">-->
+  <link rel="stylesheet" href="css/direita.css">
+</head>
+<body>
+  <div class="search-container" id="searchContainer">
+    <input type="text" placeholder="Pesquisar...">
+    <img src="img/lupa.png" alt="Ícone de Lupa" id="searchIcon">
+  </div>
+
+  <script>
+    const searchContainer = document.getElementById('searchContainer');//váriavel que armazena a DIV
+    const searchIcon = document.getElementById('searchIcon');//váriavel que armazena o IMg
+
+    searchIcon.addEventListener('click', () => {
+      searchContainer.classList.toggle('active');
+      if (searchContainer.classList.contains('active')) {
+        searchContainer.querySelector('input').focus();
+      }
+    });
+    /*Aqui está o que cada parte faz:
+
+searchContainer: É a referência ao elemento HTML que tem o ID searchContainer (o contêiner que envolve o input de pesquisa e a imagem de lupa).
+.classList: Esse é um objeto que permite manipular as classes CSS de um elemento. Com ele, você pode adicionar (add), remover (remove), ou alternar (toggle) classes no elemento.
+.toggle('active'): Esse método alterna a presença da classe active no elemento:
+Se a classe active não estiver presente, toggle a adiciona.
+Se a classe active já estiver presente, toggle a remove.
+Como funciona no contexto do seu código:
+Quando você clica na imagem da lupa, toggle('active') alterna a presença da classe active no contêiner searchContainer:
+
+Se a classe active é adicionada, o contêiner expande e o campo de pesquisa (input) aparece.
+Se a classe active é removida, o contêiner volta ao seu estado original, escondendo o campo de pesquisa.
+É um método prático para criar efeitos interativos, como abrir e fechar componentes ao clicar.*/
+  </script>
+</body>
+</html>
+
+<!--
+Explicação:
+HTML: O input e a imagem de lupa (img) estão dentro de um div com o ID searchContainer.
+CSS:
+.search-container tem largura inicial de 40px, o suficiente para exibir apenas a lupa.
+Quando a classe active é adicionada, o contêiner expande para 300px e o input se torna visível.
+.search-container.active input[type="text"] mostra o campo de pesquisa (com opacity e visibility).
+JavaScript:
+Quando a imagem é clicada, o JavaScript alterna a classe active no contêiner.
+Se o campo for expandido, ele recebe foco automaticamente (focus()).
+Substitua https://example.com/lupa.png pelo caminho da sua imagem de lupa.-->

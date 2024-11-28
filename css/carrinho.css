@@ -1,0 +1,121 @@
+#carbs {
+    position: absolute;
+    right: 2vw;
+    width: 70%;
+}
+
+#carsb {
+    position: absolute;
+    right: 1vw;
+    width: 150px;
+    margin-top: -1vh;
+}
+
+#compr1{
+    width: 90%;
+    height: 180px;
+    background-color: #004d6e; 
+    margin-top: 200px;
+    margin-left: 52px;
+    text-align: center;
+
+}
+#compr2{
+    width: 90%;
+    height: 180px;
+    background-color: #004d6e; 
+    margin-top: 410px;
+    margin-left: 52px;
+     text-align: center;
+}
+#branc1{
+    width: 15%;
+    height: 135px;
+    background-color: #f6fcff; 
+    margin-top: 220px;
+    margin-left: 75px;
+}
+#branc2{
+    width: 15%;
+    height: 135px;
+    background-color: #f6fcff; 
+    margin-top: 435px;
+    margin-left: 75px;
+}
+
+#bttm{
+    background-color: #004d6e;
+    width: 13%;
+    height: 55px;
+    margin-top: 680px;
+    margin-left: 550px;
+}
+#escrito{
+    position: relative;
+    top:3px;
+    font-size: 20px;
+    color: rgb(255, 255, 254);
+    padding-left: 60px;
+    text-decoration: 0.5s;
+    padding:.5cm;
+}
+#escrito{
+    position: relative;
+    top:3px;
+    font-size: 20px;
+    color: rgb(255, 255, 254);
+    padding-left: 60px;
+    text-decoration: 0.5s;
+    padding:.5cm;
+}
+
+#escrito{
+    position: relative;
+    top:3px;
+    font-size: 20px;
+    color: rgb(255, 255, 254);
+    padding-left: 60px;
+    text-decoration: 0.5s;
+    padding:.5cm;
+    text-decoration: none;
+}
+
+#escrito2{
+    position: relative;
+    top:3px;
+    font-size: 20px;
+    color: rgb(255, 255, 254);
+    padding-left: 60px;
+    text-decoration: 0.5s;
+    padding:.5cm;
+    text-decoration: none;
+}
+
+#disc1 {
+    position: relative;
+    color: rgb(255, 255, 254);
+    right: 10vw;
+
+}
+
+#preco1 {
+    position: relative;
+    color: rgb(255, 255, 254);
+    right: 23vw;
+}
+
+#disc2 {
+    position: relative;
+    color: rgb(255, 255, 254);
+    right: 12vw;
+
+}
+
+#preco2 {
+    position: relative;
+    color: rgb(255, 255, 254);
+    right: 23vw;
+}
+
+
+
